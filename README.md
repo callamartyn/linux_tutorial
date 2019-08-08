@@ -191,6 +191,7 @@ If you get that working, try changing it by adding some text so it prints out
 Sample SRR8054126_R1 has 12846 reads
 ```
 you will need echo and basename to do this
+
 Challenge
 ---------
 Bored? Look up how to use if statements in bash. Try to only print the files with greater than a certain number of reads.
