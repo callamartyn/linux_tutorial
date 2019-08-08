@@ -8,7 +8,7 @@ Get your working directory
 
 First you'll want to figure out what directory (folder) you are currently in. This is called your "working directory". To get it simple type
 
-```
+```bash
 $ pwd
 ```
  and hit "enter". This will **p**rint the **w**orking **d**irectory. You should see something like
@@ -149,7 +149,7 @@ Start by typing
 ```
 at the top of the page. This tells the computer it is reading a bash script. Any line with a # sign will not be read as a command, it will be commented out. It is a good idea to add comments to your code as you write it. Then on the next line type
 
-```
+```bash
 echo "Hello world"
 ```
 
@@ -167,16 +167,16 @@ Now let's say I want to count the number of reads in each of my files. To do thi
 
 Next we want to save the files as a list in our script. We can do this by assigning it to a variable. For example
 
-```
+```bash
 files=$(find . -name "*.fastq")
 ```
 Bash variables start with the $ sign. So every time you use this variable you should now type it as $files
 
-```
+```bash
 echo $files
 ```
 Now let's loop through our list. Bash loops have the following format
-```
+```bash
 for item in $list
   do
   # operation to be performed on each item
