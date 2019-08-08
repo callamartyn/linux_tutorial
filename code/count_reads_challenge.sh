@@ -9,6 +9,9 @@ do
   name=$(basename $fastq ".fastq")
   # set the reads variable to count the number of occurences of the header
   reads=$(grep -c "@SRR805412" $fastq)
-  # print out the name and the reads
-  echo "${fastq} has ${reads} reads"
+  if (($reads > 3000))
+  then
+    # print out the name and the reads
+    echo "${fastq} has ${reads} reads"
+  fi
 done
